@@ -3,8 +3,8 @@ wd <- dirname(rstudioapi::getActiveDocumentContext()$path)
 setwd(wd)
 
 #################  1. install packages  ############### 
-if (!requireNamespace("BiocManager", quietly = TRUE))
-  install.packages("BiocManager")
+if (!requireNamespace("BiocManager", quietly = TRUE)){
+  install.packages("BiocManager")}
 
 all_packages <- c("tidyverse", "stringr", "pheatmap", "limma", "devtools", "clusterProfiler", "genefilter", "matrixStats", "ConsensusClusterPlus", "corrplot", "PCAtools", "UniprotR", "GseaVis", "xlsx","openxlsx","survival","survminer","installr")
 installed <- installed.packages()
